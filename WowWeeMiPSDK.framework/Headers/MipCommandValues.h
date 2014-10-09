@@ -87,6 +87,9 @@ typedef NS_OPTIONS(uint8_t, kMipCommand) {
     kTurnLeftByAngle = 0x73,
     kTurnRightByAngle = 0x74,
     
+    kMipSetHackerUartMode = 0x01,
+    kMipGetHackerUartMode = 0x02, // kMipHackerUartModeValue
+    
     kMipSendWowWeeIRDongleCode = 0x8C,
     
     kMipClapsDetected = 0x1D,
@@ -94,6 +97,7 @@ typedef NS_OPTIONS(uint8_t, kMipCommand) {
     kMipClapDetectionStatus = 0x1F,
     kMipSetClapDetectTiming = 0x20,
     
+    kMipHackerUartConnectedStatusUpdated = 0x1C,
     kMipSetMipDetectionModeActivated = 0x0E,
     kMipGetMipDetectionMode = 0x0F,
     kMipOtherMipDetected = 0x04,
@@ -103,15 +107,26 @@ typedef NS_OPTIONS(uint8_t, kMipCommand) {
     kMipGetToyActivatedStatus = 0x21,
     kMipSetToyActivatedStatus = 0x22,
     
+    /** Added in firmware 03-09-01 #02 post production **/
     kMipGetLowPowerLevel = 0x27,
     kMipSetLowPowerLevel = 0x28,
     kMipPingOnOff = 0x24,
     kMipPingCommand = 0xF8,
     kMipiOSPingCommand = 0xF9,
+    /** End firmware extras **/
+};
+
+typedef NS_OPTIONS(NSUInteger, kMipActivationStatus) {
+    kMipActivation_FactoryDefault               = 0,        // => 00000000
+    kMipActivation_Activate                     = (1 << 0), // => 00000001
+    kMipActivation_ActivationSentToFlurry       = (1 << 1), // => 00000010
+    kMipActivation_HackerUartUsed               = (1 << 2), // => 00000100
+    kMipActivation_HackerUartUsedSentToFlurry   = (1 << 3), // => 00001000
 };
 
 typedef NS_OPTIONS(uint8_t, kMipResetMcu) {
-    kMipResetMcu_NormalReset = 0x01,
+    kMipResetMcu_NormalReset = 0x01,kMipResetMcu_ResetAndForceBootloader = 0x02,
+    //kMipResetMcu_ResetAndClearFlash = 0x03,
 };
 
 typedef NS_OPTIONS(uint8_t, kMipHackerUartModeValue) {

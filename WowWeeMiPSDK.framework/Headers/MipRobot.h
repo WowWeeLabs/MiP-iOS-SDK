@@ -20,6 +20,12 @@
 FOUNDATION_EXPORT NSString *const MIP_CONNECTED_NOTIFICATION_NAME;
 FOUNDATION_EXPORT NSString *const MIP_DISCONNECTED_NOTIFICATION_NAME;
 
+typedef NS_ENUM(NSInteger, MIPLogLevel) {
+    MIPLogLevelDebug,
+    MIPLogLevelErrors,
+    MipLogLevelNone
+};
+
 @interface MipRobot : BluetoothRobot
 
 /** Event manager handles handling basic events which do not require app interaction **/
@@ -31,19 +37,19 @@ FOUNDATION_EXPORT NSString *const MIP_DISCONNECTED_NOTIFICATION_NAME;
 @property (nonatomic, assign) kMipPositionValue position;
 @property (nonatomic, assign) NSInteger batteryLevel;
 @property (nonatomic, readonly, assign) kMipPingResponse bootMode;
-
+@property (nonatomic, readonly, assign) kMipActivationStatus toyActivationStatus;
 @property (nonatomic, assign) NSInteger mipVolume;
 
 @property (nonatomic, assign) bool disableReceivedCommandProcessing;
 
-/** Enable logging for this MIP **/
-@property (nonatomic, assign) bool logging;
+@property (nonatomic, assign) MIPLogLevel logLevel;
 
 /** Delegate for receiving callbacks */
 @property (nonatomic, weak) id<MipRobotDelegate> delegate;
 
 #pragma mark - Mip Protocal Methods
 #pragma mark Device Commands
+-(void) getMipActivationStatus;
 -(void) mipStop;
 /** Toggle IR Remote on/off
  @param whether or not to enable the remote
@@ -59,6 +65,9 @@ FOUNDATION_EXPORT NSString *const MIP_DISCONNECTED_NOTIFICATION_NAME;
 -(void) setMipVolumeLevel:(uint8_t)volumeLevel;
 -(void) getMipVolumeLevel;
 -(void) getMipSoftwareVersion;
+-(void) getMipUserData;
+-(void) setMipUserDataWithByteArray:(NSArray *)byteArray;
+-(void) setMipUserDataWithByteCount:(unsigned int)byteCount bytes:(uint8_t)firstByte, ...;
 
 -(void) readMipHardwareVersion;
 -(void) readMipFirmwareVersion;
@@ -128,6 +137,24 @@ FOUNDATION_EXPORT NSString *const MIP_DISCONNECTED_NOTIFICATION_NAME;
 
 - (void)mipDriveForwardForMilliseconds: (int)msecs withSpeed: (uint8_t)speed;
 - (void)mipDriveBackwardForMilliseconds: (int)msecs withSpeed: (uint8_t)speed;
+
+-(void) setMipProductActivated;
+
+#pragma mark Private Api Calls
+#if defined(ENABLE_PRIVATE_API_CALLS) && ENABLE_PRIVATE_API_CALLS == 1
+-(void) resetMipActivation;
+-(void) setMipActivationHackerUploaded;
+-(void) setMipActivationProductUploaded;
+/** Calibrates the gyro on a hard surface **/
+-(void) mipCalibrateGyro;
+/** Ask MIP to forcibly disconnect app mode */
+-(void) mipDisconnectAppMode;
+/** Sets game mode.
+ @param gameMode Game mode to change MIP to.
+ **/
+-(void) setMipGameMode:(kMipGameModeValue)gameMode;
+-(void) getMipGameMode;
+#endif
 
 @end
 

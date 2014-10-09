@@ -20,6 +20,3 @@ FOUNDATION_EXPORT const unsigned char WowWeeMiPSDKVersionString[];
 #import <WowWeeMiPSDK/MipRobotFinder.h>
 #import <WowWeeMiPSDK/MipRobotSound.h>
 #import <WowWeeMiPSDK/MipEventManager.h>
-
-
-

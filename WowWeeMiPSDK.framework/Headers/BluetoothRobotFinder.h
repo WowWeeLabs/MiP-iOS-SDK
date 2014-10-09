@@ -15,6 +15,13 @@
 @property (nonatomic, strong) NSArray *autoConnectRobotIdentifiers;
 @property (nonatomic, assign) bool autoConnectToKnownRobotIdentifiers;
 
+/**
+ Initializes an returns a RobotFinder singleton object.
+ 
+ @return The Robot finder object
+ */
++(instancetype)sharedInstance;
+
 - (void) addAutoConnectRobot:(BluetoothRobot *)robot;
 - (void) removeAutoConnectRobot:(BluetoothRobot *)robot;
 

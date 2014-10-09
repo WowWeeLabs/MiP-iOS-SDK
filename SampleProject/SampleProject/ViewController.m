@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+
 @import WowWeeMiPSDK;
 
 @interface ViewController () <MipRobotDelegate>
@@ -75,9 +76,9 @@
     if (!noteDict || !noteDict[@"code"]) {
         return;
     }
-    MipRobotFinderNotificationValue noteType = (MipRobotFinderNotificationValue)[noteDict[@"code"] integerValue];
+    MipRobotFinderNote noteType = (MipRobotFinderNote)[noteDict[@"code"] integerValue];
     
-    if (noteType == MipRobotFinder_MipFound) {
+    if (noteType == MipRobotFinderNote_MipFound) {
         MipRobot *mip = noteDict[@"data"];
         // Normally you might want to add this object to an array and use a UITableView to display all the found devices for the user to select. For now we just want to print this MiP to the console
         NSLog(@"Found: %@", mip);
@@ -93,7 +94,7 @@
         
         // Lets connect
         [mip connect];
-    } else if (noteType == MipRobotFinder_BluetoothError) {
+    } else if (noteType == MipRobotFinderNote_BluetoothError) {
         CBCentralManagerState errorCode = (CBCentralManagerState)[noteDict[@"data"] integerValue];
         if (errorCode == CBCentralManagerStateUnsupported) {
             NSLog(@"Bluetooth Unsupported on this device");
@@ -102,7 +103,7 @@
             NSLog(@"Bluetooth is turned off");
             self.mipStatusLabel.text = @"Bluetooth Unsupported on this device";
         }
-    } else if (noteType == MipRobotFinder_BluetoothIsAvailable) {
+    } else if (noteType == MipRobotFinderNote_BluetoothIsAvailable) {
         //[[MipRobotFinder sharedInstance] scanForMips];
     }
 }

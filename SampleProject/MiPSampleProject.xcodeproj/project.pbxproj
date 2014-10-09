@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1798D3C19C160FA0015EA0E /* WowWeeMiPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1798D3B19C160FA0015EA0E /* WowWeeMiPSDK.framework */; };
-		A1798D3E19C161800015EA0E /* WowWeeMiPSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1798D3B19C160FA0015EA0E /* WowWeeMiPSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BA7793319E5258100DBCDBE /* WowWeeMiPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */; };
+		8BA7793519E5260E00DBCDBE /* WowWeeMiPSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A196139C19C04D8600AA64C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A196139B19C04D8600AA64C4 /* main.m */; };
 		A196139F19C04D8600AA64C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A196139E19C04D8600AA64C4 /* AppDelegate.m */; };
 		A19613A219C04D8600AA64C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19613A119C04D8600AA64C4 /* ViewController.m */; };
@@ -24,14 +24,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1798D3E19C161800015EA0E /* WowWeeMiPSDK.framework in CopyFiles */,
+				8BA7793519E5260E00DBCDBE /* WowWeeMiPSDK.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A1798D3B19C160FA0015EA0E /* WowWeeMiPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WowWeeMiPSDK.framework; path = ../WowWeeMiPSDK.framework; sourceTree = "<group>"; };
+		8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WowWeeMiPSDK.framework; path = ../../WowWeeMiPSDK.framework; sourceTree = "<group>"; };
 		A196139619C04D8600AA64C4 /* MiPSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiPSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196139A19C04D8600AA64C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A196139B19C04D8600AA64C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1798D3C19C160FA0015EA0E /* WowWeeMiPSDK.framework in Frameworks */,
+				8BA7793319E5258100DBCDBE /* WowWeeMiPSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 		A196138D19C04D8600AA64C4 = {
 			isa = PBXGroup;
 			children = (
-				A1798D3B19C160FA0015EA0E /* WowWeeMiPSDK.framework */,
 				A196139819C04D8600AA64C4 /* SampleProject */,
 				A196139719C04D8600AA64C4 /* Products */,
 			);
@@ -76,6 +75,7 @@
 		A196139819C04D8600AA64C4 /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */,
 				A196139D19C04D8600AA64C4 /* AppDelegate.h */,
 				A196139E19C04D8600AA64C4 /* AppDelegate.m */,
 				A19613A019C04D8600AA64C4 /* ViewController.h */,
@@ -278,9 +278,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/andy/Development/xcode/MiP-iOS-SDK",
+					"$(PROJECT_DIR)/../",
+					"\"$(SRCROOT)/../WowWeeMiPSDK.framework\"",
 				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = MiPSampleProject;
 			};
@@ -292,9 +294,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/andy/Development/xcode/MiP-iOS-SDK",
+					"$(PROJECT_DIR)/../",
+					"\"$(SRCROOT)/../WowWeeMiPSDK.framework\"",
 				);
 				INFOPLIST_FILE = SampleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = MiPSampleProject;
 			};

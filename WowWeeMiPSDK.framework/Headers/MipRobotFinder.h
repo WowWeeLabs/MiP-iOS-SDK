@@ -1,49 +1,55 @@
-//
-//  BTCentralManager.h
-//  bttester
-//
-//  Created by Andy on 12/9/13.
-//  Copyright (c) 2013 Andy. All rights reserved.
-//
-
-// TODO: Should make this a subclass of BluetoothManager
+/*
+ * Copyright 2010-2014 WowWee Group Ltd, All Rights Reserved.
+ *
+ * Licensed under the "license" file accompanying this file. This file is distributed
+ * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
 
 @import CoreBluetooth;
+
 #import "MipRobot.h"
 #import "BluetoothRobotFinder.h"
 
 FOUNDATION_EXPORT NSString *const MipRobotFinderNotificationID;
 FOUNDATION_EXPORT bool const MIP_ROBOT_FINDER_DEBUG_MODE;
 
-typedef enum {
-    MRFScanOptionMask_ShowAllDevices       = 0,
-    MRFScanOptionMask_FilterByProductId    = 1 << 0,
-    MRFScanOptionMask_FilterByServices     = 1 << 1,
-    MRFScanOptionMask_FilterByDeviceName   = 1 << 2,
-} MipRobotFinderScanOptions;
-
+/**
+ These are the values that can be sent from MipRobotFinder
+ */
 typedef enum : NSUInteger {
-    MipRobotFinder_MipFound = 1,
-    MipRobotFinder_MipListCleared,
-    MipRobotFinder_BluetoothError,
-    MipRobotFinder_BluetoothIsOff,
-    MipRobotFinder_BluetoothIsAvailable,
-} MipRobotFinderNotificationValue;
+    MipRobotFinderNote_MipFound = 1,
+    MipRobotFinderNote_MipListCleared,
+    MipRobotFinderNote_BluetoothError,
+    MipRobotFinderNote_BluetoothIsOff,
+    MipRobotFinderNote_BluetoothIsAvailable,
+} MipRobotFinderNote;
 
 @interface MipRobotFinder : BluetoothRobotFinder <CBCentralManagerDelegate>
 
-@property (assign, nonatomic) MipRobotFinderScanOptions scanOptionsFlagMask;
+/**
 
-@property (nonatomic, strong, readonly) NSMutableArray *mipsFound;
-@property (nonatomic, strong, readonly) NSMutableArray *mipsConnected;
+ */
+@property (nonatomic, strong, readonly) NSArray *mipsFound;
+@property (nonatomic, strong, readonly) NSArray *mipsConnected;
 @property (nonatomic, assign, readonly) CBCentralManagerState cbCentralManagerState;
 
-+(id)sharedInstance;
+// Log level
+@property (nonatomic, assign) MIPLogLevel logLevel;
 
+/**
+ Starts the BLE scanning
+ */
 -(void)scanForMips;
--(void)scanForMipsForDuration:(NSUInteger)seconds; // Scan only for a specified number of seconds (stops battery drain)
+
+/**
+ Starts the BLE scanning for a specified number of seconds. Normally you should use this method because endlessly scanning is very battery intensive.
+ */
+-(void)scanForMipsForDuration:(NSUInteger)seconds;
 -(void)stopScanForMips;
--(MipRobot *)firstConnectedMip;
 -(void)clearFoundMipList;
+
+
 
 @end
