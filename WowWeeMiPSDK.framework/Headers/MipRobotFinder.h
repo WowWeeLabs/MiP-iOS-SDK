@@ -31,8 +31,8 @@ typedef enum : NSUInteger {
 /**
 
  */
-@property (nonatomic, strong, readonly) NSArray *mipsFound;
-@property (nonatomic, strong, readonly) NSArray *mipsConnected;
+@property (nonatomic, strong, readonly) NSMutableArray *mipsFound;
+@property (nonatomic, strong, readonly) NSMutableArray *mipsConnected;
 @property (nonatomic, assign, readonly) CBCentralManagerState cbCentralManagerState;
 
 // Log level
@@ -50,6 +50,10 @@ typedef enum : NSUInteger {
 -(void)stopScanForMips;
 -(void)clearFoundMipList;
 
-
+/**
+ Quick access to first connected MiP in mipsConnected list
+ @return mipsConnected[0] or nil if mipsConnected is empty
+ */
+-(MipRobot *)firstConnectedMip;
 
 @end
