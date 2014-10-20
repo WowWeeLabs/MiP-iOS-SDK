@@ -47,6 +47,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:MipRobotFinderNotificationID object:nil];
 }
 
+#pragma mark - Button Actions
 - (IBAction)playSoundPressed:(id)sender {
     NSLog(@"Playing MiP Sound");
     
@@ -68,6 +69,10 @@
     
     // Mip can fall forward or backward, in our example we are just simply making him fall forward
     [self.mip mipFalloverWithStyle:kMipPositionFaceDown];
+}
+
+- (IBAction)drivePressed:(id)sender {
+    
 }
 
 #pragma mark - MipRobotFinder Notification
@@ -116,6 +121,7 @@
     self.playSoundButton.enabled = YES;
     self.changeRGBColourButton.enabled = YES;
     self.falloverButton.enabled = YES;
+    self.driveButton.enabled = YES;
 }
 
 - (void) MipDeviceDisconnected:(MipRobot *)mip error:(NSError *)error {
@@ -123,6 +129,7 @@
     self.playSoundButton.enabled = NO;
     self.changeRGBColourButton.enabled = NO;
     self.falloverButton.enabled = NO;
+    self.driveButton.enabled = NO;
     self.mip = nil;
     
     [[MipRobotFinder sharedInstance] scanForMips];

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8BA7793319E5258100DBCDBE /* WowWeeMiPSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */; };
 		8BA7793519E5260E00DBCDBE /* WowWeeMiPSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BC1FF9119F4CBB900FABC13 /* JoystickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1FF9019F4CBB900FABC13 /* JoystickView.m */; };
+		8BC1FF9419F4CE5100FABC13 /* DriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1FF9319F4CE5100FABC13 /* DriveViewController.m */; };
+		8BC1FF9A19F4E69000FABC13 /* joy_fw_bk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1FF9719F4E69000FABC13 /* joy_fw_bk@2x.png */; };
+		8BC1FF9B19F4E69000FABC13 /* joy_l_r@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1FF9819F4E69000FABC13 /* joy_l_r@2x.png */; };
+		8BC1FF9C19F4E69000FABC13 /* joy_outerring@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1FF9919F4E69000FABC13 /* joy_outerring@2x.png */; };
 		A196139C19C04D8600AA64C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A196139B19C04D8600AA64C4 /* main.m */; };
 		A196139F19C04D8600AA64C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A196139E19C04D8600AA64C4 /* AppDelegate.m */; };
 		A19613A219C04D8600AA64C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19613A119C04D8600AA64C4 /* ViewController.m */; };
@@ -32,6 +37,13 @@
 
 /* Begin PBXFileReference section */
 		8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WowWeeMiPSDK.framework; path = ../../WowWeeMiPSDK.framework; sourceTree = "<group>"; };
+		8BC1FF8F19F4CBB900FABC13 /* JoystickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickView.h; sourceTree = "<group>"; };
+		8BC1FF9019F4CBB900FABC13 /* JoystickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoystickView.m; sourceTree = "<group>"; };
+		8BC1FF9219F4CE5100FABC13 /* DriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveViewController.h; sourceTree = "<group>"; };
+		8BC1FF9319F4CE5100FABC13 /* DriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveViewController.m; sourceTree = "<group>"; };
+		8BC1FF9719F4E69000FABC13 /* joy_fw_bk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joy_fw_bk@2x.png"; sourceTree = "<group>"; };
+		8BC1FF9819F4E69000FABC13 /* joy_l_r@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joy_l_r@2x.png"; sourceTree = "<group>"; };
+		8BC1FF9919F4E69000FABC13 /* joy_outerring@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joy_outerring@2x.png"; sourceTree = "<group>"; };
 		A196139619C04D8600AA64C4 /* MiPSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiPSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A196139A19C04D8600AA64C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A196139B19C04D8600AA64C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +68,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BC1FF8E19F4CBB900FABC13 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				8BC1FF8F19F4CBB900FABC13 /* JoystickView.h */,
+				8BC1FF9019F4CBB900FABC13 /* JoystickView.m */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		8BC1FF9519F4E69000FABC13 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8BC1FF9619F4E69000FABC13 /* Joystick */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8BC1FF9619F4E69000FABC13 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				8BC1FF9719F4E69000FABC13 /* joy_fw_bk@2x.png */,
+				8BC1FF9819F4E69000FABC13 /* joy_l_r@2x.png */,
+				8BC1FF9919F4E69000FABC13 /* joy_outerring@2x.png */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
 		A196138D19C04D8600AA64C4 = {
 			isa = PBXGroup;
 			children = (
@@ -76,10 +115,14 @@
 			isa = PBXGroup;
 			children = (
 				8BA7793219E5258100DBCDBE /* WowWeeMiPSDK.framework */,
+				8BC1FF9519F4E69000FABC13 /* Images */,
+				8BC1FF8E19F4CBB900FABC13 /* Joystick */,
 				A196139D19C04D8600AA64C4 /* AppDelegate.h */,
 				A196139E19C04D8600AA64C4 /* AppDelegate.m */,
 				A19613A019C04D8600AA64C4 /* ViewController.h */,
 				A19613A119C04D8600AA64C4 /* ViewController.m */,
+				8BC1FF9219F4CE5100FABC13 /* DriveViewController.h */,
+				8BC1FF9319F4CE5100FABC13 /* DriveViewController.m */,
 				A19613A319C04D8600AA64C4 /* Main.storyboard */,
 				A19613A619C04D8600AA64C4 /* Images.xcassets */,
 				A19613A819C04D8600AA64C4 /* LaunchScreen.xib */,
@@ -156,8 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19613A519C04D8600AA64C4 /* Main.storyboard in Resources */,
+				8BC1FF9B19F4E69000FABC13 /* joy_l_r@2x.png in Resources */,
 				A19613AA19C04D8600AA64C4 /* LaunchScreen.xib in Resources */,
 				A19613A719C04D8600AA64C4 /* Images.xcassets in Resources */,
+				8BC1FF9A19F4E69000FABC13 /* joy_fw_bk@2x.png in Resources */,
+				8BC1FF9C19F4E69000FABC13 /* joy_outerring@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC1FF9419F4CE5100FABC13 /* DriveViewController.m in Sources */,
+				8BC1FF9119F4CBB900FABC13 /* JoystickView.m in Sources */,
 				A19613A219C04D8600AA64C4 /* ViewController.m in Sources */,
 				A196139F19C04D8600AA64C4 /* AppDelegate.m in Sources */,
 				A196139C19C04D8600AA64C4 /* main.m in Sources */,

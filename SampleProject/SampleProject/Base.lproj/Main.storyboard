@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -49,6 +50,16 @@
                                     <action selector="changeChestRGBPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y0F-qK-NxO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejb-qc-e5i">
+                                <rect key="frame" x="255" y="255" width="90" height="30"/>
+                                <state key="normal" title="Drive">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="drivePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IQF-bN-SkH"/>
+                                    <segue destination="rPX-gF-PAl" kind="show" id="4F1-yL-Hkf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -56,10 +67,12 @@
                             <constraint firstAttribute="centerX" secondItem="CGs-8t-lhg" secondAttribute="centerX" id="8rb-YV-1ie"/>
                             <constraint firstAttribute="centerX" secondItem="y4p-Rv-4GM" secondAttribute="centerX" id="ero-e2-CCu"/>
                             <constraint firstAttribute="centerX" secondItem="EjW-ra-vIZ" secondAttribute="centerX" id="huW-Ue-HgQ"/>
+                            <constraint firstAttribute="centerX" secondItem="ejb-qc-e5i" secondAttribute="centerX" id="p7a-SU-gbF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="changeRGBColourButton" destination="eZH-mV-L7j" id="Wk0-0r-Lan"/>
+                        <outlet property="driveButton" destination="ejb-qc-e5i" id="hcY-QO-An0"/>
                         <outlet property="falloverButton" destination="EjW-ra-vIZ" id="Wrs-rT-teP"/>
                         <outlet property="mipStatusLabel" destination="y4p-Rv-4GM" id="1hK-Lh-GyH"/>
                         <outlet property="playSoundButton" destination="CGs-8t-lhg" id="YUq-k9-Ybm"/>
@@ -67,7 +80,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="113"/>
+            <point key="canvasLocation" x="169" y="112"/>
+        </scene>
+        <!--Drive View Controller-->
+        <scene sceneID="RGU-Xi-cUi">
+            <objects>
+                <viewController storyboardIdentifier="DriveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rPX-gF-PAl" customClass="DriveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8z3-Q9-Oug"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZGf-MV-zAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KqB-zp-i4w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k6b-F1-Na4" userLabel="Joystick - Left" customClass="JoystickView">
+                                <rect key="frame" x="50" y="147" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-gx-fO5" userLabel="Joystick - Right" customClass="JoystickView">
+                                <rect key="frame" x="350" y="147" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYs-Qk-var">
+                                <rect key="frame" x="16" y="8" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="rPX-gF-PAl" eventType="touchUpInside" id="CiA-ke-Xlb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drive your MiP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfq-2z-NhM">
+                                <rect key="frame" x="165" y="30" width="271" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3TS-EG-Xxk"/>
+                                    <constraint firstAttribute="width" constant="271" id="MqR-XB-vKk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Lfq-2z-NhM" secondAttribute="centerX" id="Ssd-Vl-zO8"/>
+                            <constraint firstItem="Lfq-2z-NhM" firstAttribute="top" secondItem="8z3-Q9-Oug" secondAttribute="bottom" constant="10" id="c2O-0n-CLL"/>
+                            <constraint firstItem="KYs-Qk-var" firstAttribute="leading" secondItem="KqB-zp-i4w" secondAttribute="leadingMargin" id="f5X-zE-aWL"/>
+                            <constraint firstItem="KYs-Qk-var" firstAttribute="top" secondItem="KqB-zp-i4w" secondAttribute="topMargin" constant="8" id="jz0-gC-Ha8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftJoystick" destination="k6b-F1-Na4" id="JP5-7c-tJg"/>
+                        <outlet property="rightJoystick" destination="qx5-gx-fO5" id="GXe-6q-GO2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knr-nH-GkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="112"/>
         </scene>
     </scenes>
 </document>

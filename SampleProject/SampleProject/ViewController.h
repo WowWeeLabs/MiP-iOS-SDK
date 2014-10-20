@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *playSoundButton;
 @property (weak, nonatomic) IBOutlet UIButton *changeRGBColourButton;
 @property (weak, nonatomic) IBOutlet UIButton *falloverButton;
+@property (weak, nonatomic) IBOutlet UIButton *driveButton;
 
 @end
 
