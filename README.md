@@ -131,7 +131,8 @@ After a mip is found, the MipRobotFinder will send a notification with the follo
 
 	{
 		"code": MipRobotFinder_MipFound,
-		"data": <MipRobot>			}
+		"data": <MipRobot>		
+	}
 
 You can handle this notification using the following snippet from the sample project
 
@@ -191,11 +192,11 @@ Currently the SDK is not available for OSX however we will make this available i
 .
 ### Can I use your cool joystick class?
 
-Yes we have provided this as a separate repository, feel free to use this or make changes as you want. We would love pull requests.
+Yes we have provided the source code in our sample project, feel free to use this or make changes as you want. We would love pull requests.
 
 ### Can I create other language versions of the SDK?
 
-Sure, very soon we will be providing our full lower-level BLE documentation so you can add your language of choice for our SDK.
+The lower level BLE command protocol is available in our [MiP-BLE-Protocol](http://github.com/WowWeeLabs/MiP-BLE-Protocol) repository.
 
 
 License
