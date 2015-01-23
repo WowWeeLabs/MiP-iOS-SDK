@@ -1,0 +1,6 @@
+framework module WowWeeMiPSDK {
+  umbrella header "WowWeeMiPSDK.h"
+
+  export *
+  module * { export * }
+}
