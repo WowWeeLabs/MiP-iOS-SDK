@@ -17,9 +17,6 @@ Table of Contents
 - [Notes about the SDK](#notes-about-the-sdk)
 - [Using the SDK](#using-the-sdk)
 	- [Finding a MiP](#finding-mips)
-	- [Connecting to MiP](#connecting-to-mip)
-	- [Driving MiP](#driving-mip)
- 	- [Other Cool Stuff](#other-cool-stuff)
 - SDK Documentation (coming soon)
 - [License](#license)
 - [Contributing](#contributing)
@@ -148,19 +145,6 @@ In our sample project we automatically connect to the first MiP we find, however
 
 #### Special Note about using MipRobot objects
 When MiPs are no longer available (e.g. the player turns one off), they will still contain a valid MipRobot instance object. The only way to know if the MiP is available is to try to connect to it, or do another scan.
-
-### Connecting to MiP
--- Coming soon!
-
-### Driving MiP
--- Coming soon!
-
-### Playing a sound
--- Coming soon!
-
-### Other Cool Stuff
--- Coming soon!
-
 
 Notes about the SDK
 ---------------------------------
