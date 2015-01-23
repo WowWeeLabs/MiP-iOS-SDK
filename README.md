@@ -173,6 +173,12 @@ For now we do not support CocoaPods. Pull requests are welcome.
 
 Our SDK fully builds for the simulator, however at present the IOS simulator does not support Bluetooth Low Energy. This means you will not be able to properly test the functionality without using a real IOS device.
 
+### Submitting to the AppStore
+
+Our SDK is a universal build which means it includes support for all platforms. Currently however Apple does not allow frameworks which contain simulator support to be submitted to the appstore. We provide a special framework for this purpose, but also it's very easy to do yourself. You can use the lipo tool provided on OSX.
+
+    lipo -remove i386 -remove x86_64 WowWeeMiPSDK -output WowWeeMiPSDK
+
 ### Apple Watch Support
 
 At present we don't have an Apple Watch device to test with. When it becomes available we are open to adding support for WatchKit.
