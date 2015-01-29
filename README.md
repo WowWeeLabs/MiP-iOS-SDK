@@ -213,4 +213,5 @@ Credits
 Projects using this SDK
 ---------------------------------
 * [WowWee MiP Official App](https://itunes.apple.com/us/app/mip-app/id768591497?mt=8)
+* [MiP Robot Controller](https://itunes.apple.com/us/app/mip-robot-controller/id952574427?ls=1&mt=8)
 * Send us a pull request to add your app here
