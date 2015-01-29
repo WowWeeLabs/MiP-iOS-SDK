@@ -212,6 +212,6 @@ Credits
 
 Projects using this SDK
 ---------------------------------
-* [WowWee MiP Official App](https://itunes.apple.com/us/app/mip-app/id768591497?mt=8)
-* [MiP Robot Controller](https://itunes.apple.com/us/app/mip-robot-controller/id952574427?ls=1&mt=8)
+* [WowWee MiP Official App](https://itunes.apple.com/us/app/mip-app/id768591497?mt=8) - Official app developed by WowWee using this SDK.
+* [MiP Robot Controller](https://itunes.apple.com/us/app/mip-robot-controller/id952574427?ls=1&mt=8) - Control your MiP using Pebble watch or your iPhone!
 * Send us a pull request to add your app here
