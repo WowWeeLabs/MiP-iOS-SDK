@@ -71,9 +71,7 @@
     [self.mip mipFalloverWithStyle:kMipPositionFaceDown];
 }
 
-- (IBAction)drivePressed:(id)sender {
-    
-}
+
 
 #pragma mark - MipRobotFinder Notification
 - (void)mipFoundNotification:(NSNotification *)note {
@@ -131,7 +129,7 @@
     self.falloverButton.enabled = NO;
     self.driveButton.enabled = NO;
     self.mip = nil;
-    
+    [[MipRobotFinder sharedInstance] clearFoundMipList];
     [[MipRobotFinder sharedInstance] scanForMips];
 }
 
