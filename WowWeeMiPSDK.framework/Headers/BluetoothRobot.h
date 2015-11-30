@@ -11,10 +11,11 @@
 @interface BluetoothRobot : NSObject
 
 @property (nonatomic, strong, readonly) NSString *name;
-@property (nonatomic, assign, readonly) int connectAttempts;
 @property (nonatomic) BOOL autoReconnect;
 
 - (void)connect;
 - (void)connectWithCallback:(void (^)(NSError *))callback;
 - (void)disconnect;
+- (BOOL)isConnected;
+
 @end
