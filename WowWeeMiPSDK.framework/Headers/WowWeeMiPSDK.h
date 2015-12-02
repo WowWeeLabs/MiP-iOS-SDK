@@ -20,3 +20,13 @@ FOUNDATION_EXPORT const unsigned char WowWeeMiPSDKVersionString[];
 #import <WowWeeMiPSDK/MipRobotFinder.h>
 #import <WowWeeMiPSDK/MipRobotSound.h>
 #import <WowWeeMiPSDK/MipEventManager.h>
+
+
+
+#import <WowWeeMiPSDK/MiposaurCommandValues.h>
+#import <WowWeeMiPSDK/BluetoothRobot.h>
+#import <WowWeeMiPSDK/BluetoothRobotFinder.h>
+#import <WowWeeMiPSDK/MiposaurEventManager.h>
+#import <WowWeeMiPSDK/MiposaurRobot.h>
+#import <WowWeeMiPSDK/MiposaurRobotFinder.h>
+#import <WowWeeMiPSDK/MiposaurRobotSound.h>

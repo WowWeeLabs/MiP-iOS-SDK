@@ -32,17 +32,49 @@
 		<data>
 		CjAO8UyLlhbfGPGIqr2tPSh/dIQ=
 		</data>
+		<key>Headers/MiposaurCommandValues.h</key>
+		<data>
+		Nd8Gaj0idO0plgYq8FCMRaZ748Y=
+		</data>
+		<key>Headers/MiposaurEventManager.h</key>
+		<data>
+		rzhodeXkvM26lJlIcMQWNJtB7u0=
+		</data>
+		<key>Headers/MiposaurRobot.h</key>
+		<data>
+		JcHIXxFDuG0FUX0sT4TipyWLtHk=
+		</data>
+		<key>Headers/MiposaurRobotFinder.h</key>
+		<data>
+		kg4OP4B1iVEk+ufdv4xa9fGQ0Ss=
+		</data>
+		<key>Headers/MiposaurRobotSound.h</key>
+		<data>
+		CBBibCEVsKLPSVIRBpiA0Fks0B4=
+		</data>
+		<key>Headers/MiposaurSDKConfig.h</key>
+		<data>
+		DdchW9gXfOq25ufeoF0C3QOCumY=
+		</data>
 		<key>Headers/RobotCommand.h</key>
 		<data>
 		iAXbolzRdQFipOr5KfcGb1fKVHY=
 		</data>
 		<key>Headers/WowWeeMiPSDK.h</key>
 		<data>
-		5ceXvtMKLnYkBRLMHFCfAwgZb8U=
+		3jnShNl5AjZPYyrSY/4kNsn8KTo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		M/Cdo0BgS/dOETj15TpKJ8+ZBvc=
+		Jpu5aaCaGa0qg0gXNwajWqjuMbk=
+		</data>
+		<key>MiposaurRobot.m.orig</key>
+		<data>
+		eI8LnqvOmFnGeR91uvqq4yBx6lE=
+		</data>
+		<key>MiposaurRobotFinder.m.orig</key>
+		<data>
+		k6jU5YTtpFILQFmlfSpKG80K4BU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,13 +111,45 @@
 		<data>
 		CjAO8UyLlhbfGPGIqr2tPSh/dIQ=
 		</data>
+		<key>Headers/MiposaurCommandValues.h</key>
+		<data>
+		Nd8Gaj0idO0plgYq8FCMRaZ748Y=
+		</data>
+		<key>Headers/MiposaurEventManager.h</key>
+		<data>
+		rzhodeXkvM26lJlIcMQWNJtB7u0=
+		</data>
+		<key>Headers/MiposaurRobot.h</key>
+		<data>
+		JcHIXxFDuG0FUX0sT4TipyWLtHk=
+		</data>
+		<key>Headers/MiposaurRobotFinder.h</key>
+		<data>
+		kg4OP4B1iVEk+ufdv4xa9fGQ0Ss=
+		</data>
+		<key>Headers/MiposaurRobotSound.h</key>
+		<data>
+		CBBibCEVsKLPSVIRBpiA0Fks0B4=
+		</data>
+		<key>Headers/MiposaurSDKConfig.h</key>
+		<data>
+		DdchW9gXfOq25ufeoF0C3QOCumY=
+		</data>
 		<key>Headers/RobotCommand.h</key>
 		<data>
 		iAXbolzRdQFipOr5KfcGb1fKVHY=
 		</data>
 		<key>Headers/WowWeeMiPSDK.h</key>
 		<data>
-		5ceXvtMKLnYkBRLMHFCfAwgZb8U=
+		3jnShNl5AjZPYyrSY/4kNsn8KTo=
+		</data>
+		<key>MiposaurRobot.m.orig</key>
+		<data>
+		eI8LnqvOmFnGeR91uvqq4yBx6lE=
+		</data>
+		<key>MiposaurRobotFinder.m.orig</key>
+		<data>
+		k6jU5YTtpFILQFmlfSpKG80K4BU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
