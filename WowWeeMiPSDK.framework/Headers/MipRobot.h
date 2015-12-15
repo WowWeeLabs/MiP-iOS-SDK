@@ -140,21 +140,6 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 
 -(void) setMipProductActivated;
 
-#pragma mark Private Api Calls
-#if defined(ENABLE_PRIVATE_API_CALLS) && ENABLE_PRIVATE_API_CALLS == 1
--(void) resetMipActivation;
--(void) setMipActivationHackerUploaded;
--(void) setMipActivationProductUploaded;
-/** Calibrates the gyro on a hard surface **/
--(void) mipCalibrateGyro;
-/** Ask MIP to forcibly disconnect app mode */
--(void) mipDisconnectAppMode;
-/** Sets game mode.
- @param gameMode Game mode to change MIP to.
- **/
--(void) setMipGameMode:(kMipGameModeValue)gameMode;
--(void) getMipGameMode;
-#endif
 
 @end
 

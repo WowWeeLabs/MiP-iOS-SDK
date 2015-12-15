@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MipRobot.h</key>
 		<data>
-		bFkkn9oziUoN3ljoiQ+jDesSSkI=
+		A/OndtA21mZZx3kYD49M/g+jLhc=
 		</data>
 		<key>Headers/MipRobotFinder.h</key>
 		<data>
@@ -46,15 +46,11 @@
 		</data>
 		<key>Headers/MiposaurRobotFinder.h</key>
 		<data>
-		kg4OP4B1iVEk+ufdv4xa9fGQ0Ss=
+		9+fd7HmcijAEDjd5GsRCA0iHGIA=
 		</data>
 		<key>Headers/MiposaurRobotSound.h</key>
 		<data>
 		CBBibCEVsKLPSVIRBpiA0Fks0B4=
-		</data>
-		<key>Headers/MiposaurSDKConfig.h</key>
-		<data>
-		DdchW9gXfOq25ufeoF0C3QOCumY=
 		</data>
 		<key>Headers/RobotCommand.h</key>
 		<data>
@@ -66,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1ykCsxsLFgr74mEmhNw21QPxsNI=
+		IWkCyl2zq1HOVVtMnra2McMkcok=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,7 +89,7 @@
 		</data>
 		<key>Headers/MipRobot.h</key>
 		<data>
-		bFkkn9oziUoN3ljoiQ+jDesSSkI=
+		A/OndtA21mZZx3kYD49M/g+jLhc=
 		</data>
 		<key>Headers/MipRobotFinder.h</key>
 		<data>
@@ -117,15 +113,11 @@
 		</data>
 		<key>Headers/MiposaurRobotFinder.h</key>
 		<data>
-		kg4OP4B1iVEk+ufdv4xa9fGQ0Ss=
+		9+fd7HmcijAEDjd5GsRCA0iHGIA=
 		</data>
 		<key>Headers/MiposaurRobotSound.h</key>
 		<data>
 		CBBibCEVsKLPSVIRBpiA0Fks0B4=
-		</data>
-		<key>Headers/MiposaurSDKConfig.h</key>
-		<data>
-		DdchW9gXfOq25ufeoF0C3QOCumY=
 		</data>
 		<key>Headers/RobotCommand.h</key>
 		<data>

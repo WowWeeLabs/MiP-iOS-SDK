@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *changeRGBColourButton;
 @property (weak, nonatomic) IBOutlet UIButton *falloverButton;
 @property (weak, nonatomic) IBOutlet UIButton *driveButton;
+@property (weak, nonatomic) IBOutlet UILabel *weightLevel;
 
 @end
 

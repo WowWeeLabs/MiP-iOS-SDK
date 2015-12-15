@@ -120,6 +120,9 @@
     self.changeRGBColourButton.enabled = YES;
     self.falloverButton.enabled = YES;
     self.driveButton.enabled = YES;
+    self.weightLevel.enabled =YES;
+    
+    [self.mip readMipSensorWeightLevel];
 }
 
 - (void) MipDeviceDisconnected:(MipRobot *)mip error:(NSError *)error {
@@ -128,9 +131,23 @@
     self.changeRGBColourButton.enabled = NO;
     self.falloverButton.enabled = NO;
     self.driveButton.enabled = NO;
+    self.weightLevel.enabled =NO;
     self.mip = nil;
     [[MipRobotFinder sharedInstance] clearFoundMipList];
     [[MipRobotFinder sharedInstance] scanForMips];
 }
 
+-(void) MipRobot:(MipRobot *)mip didReceiveWeightReading:(uint8_t)value learningForward:(bool)learningForward {
+    NSLog(@"didReceiveWeightReading");
+    
+    int8_t weight = value;
+    
+    [self.weightLevel setText:[NSString stringWithFormat:@"Level = %d !",weight]];
+    
+    [self performSelector:@selector(resetLevel) withObject:nil afterDelay:2];
+    
+}
+-(void)resetLevel{
+[self.weightLevel setText:[NSString stringWithFormat:@"Weight Level"]];
+}
 @end

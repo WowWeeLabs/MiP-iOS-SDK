@@ -24,6 +24,7 @@ typedef enum : NSUInteger {
     MiposaurRobotFinderNote_BluetoothError,
     MiposaurRobotFinderNote_BluetoothIsOff,
     MiposaurRobotFinderNote_BluetoothIsAvailable,
+    MiposaurRobotFinderNote_BluetoothNotSupport
 } MiposaurRobotFinderNote;
 
 @interface MiposaurRobotFinder : BluetoothRobotFinder <CBCentralManagerDelegate>
