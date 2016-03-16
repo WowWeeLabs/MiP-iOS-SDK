@@ -12,7 +12,6 @@
 #import "MiposaurRobotSound.h"
 #import "BluetoothRobot.h"
 
-static int ddLogLevel;
 
 @class MiposaurEventManager;
 
@@ -44,7 +43,6 @@ typedef NS_ENUM(NSInteger, MIPOSAURLogLevel) {
 @property (nonatomic, readonly, assign) kMiposaurActivationStatus toyActivationStatus;
 @property (nonatomic, assign) NSInteger miposaurVolume;
 @property (nonatomic, assign) bool disableReceivedCommandProcessing;
-@property (nonatomic, assign) MIPOSAURLogLevel logLevel;
 
 - (void)setPlayAnimation:(uint8_t)animationId soundValue:(kMiposaurAnimationEnableSoundValue)enableSound;
 - (void)getDetectionMode;

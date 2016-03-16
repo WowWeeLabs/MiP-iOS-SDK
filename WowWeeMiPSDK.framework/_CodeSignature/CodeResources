@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		6PbahegYdD+RTbqIU7cgaGNByCE=
+		</data>
 		<key>Headers/BluetoothRobot.h</key>
 		<data>
-		zpfgmGcZB784pWvRXdagPuG16Ls=
+		JulWcud2v7A0DnL92qL+X79p73A=
 		</data>
 		<key>Headers/BluetoothRobotFinder.h</key>
 		<data>
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/MipCommandValues.h</key>
 		<data>
-		R8s8Hek+Ug0yiTzFoKvUInnb5I8=
+		QbZberp3voEdSldQLz2/Ap3Ycu8=
 		</data>
 		<key>Headers/MipEventManager.h</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>Headers/MiposaurCommandValues.h</key>
 		<data>
-		Nd8Gaj0idO0plgYq8FCMRaZ748Y=
+		yKGlvJ4nWUDAND4YKyBiPvMZIbc=
 		</data>
 		<key>Headers/MiposaurEventManager.h</key>
 		<data>
@@ -42,7 +46,7 @@
 		</data>
 		<key>Headers/MiposaurRobot.h</key>
 		<data>
-		JcHIXxFDuG0FUX0sT4TipyWLtHk=
+		uOENB//JPJTqUCoR6Alz787puFw=
 		</data>
 		<key>Headers/MiposaurRobotFinder.h</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IWkCyl2zq1HOVVtMnra2McMkcok=
+		ukhSmTSFJhV1GPPeL4q4UqoZ0Xo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,7 +77,7 @@
 	<dict>
 		<key>Headers/BluetoothRobot.h</key>
 		<data>
-		zpfgmGcZB784pWvRXdagPuG16Ls=
+		JulWcud2v7A0DnL92qL+X79p73A=
 		</data>
 		<key>Headers/BluetoothRobotFinder.h</key>
 		<data>
@@ -81,7 +85,7 @@
 		</data>
 		<key>Headers/MipCommandValues.h</key>
 		<data>
-		R8s8Hek+Ug0yiTzFoKvUInnb5I8=
+		QbZberp3voEdSldQLz2/Ap3Ycu8=
 		</data>
 		<key>Headers/MipEventManager.h</key>
 		<data>
@@ -101,7 +105,7 @@
 		</data>
 		<key>Headers/MiposaurCommandValues.h</key>
 		<data>
-		Nd8Gaj0idO0plgYq8FCMRaZ748Y=
+		yKGlvJ4nWUDAND4YKyBiPvMZIbc=
 		</data>
 		<key>Headers/MiposaurEventManager.h</key>
 		<data>
@@ -109,7 +113,7 @@
 		</data>
 		<key>Headers/MiposaurRobot.h</key>
 		<data>
-		JcHIXxFDuG0FUX0sT4TipyWLtHk=
+		uOENB//JPJTqUCoR6Alz787puFw=
 		</data>
 		<key>Headers/MiposaurRobotFinder.h</key>
 		<data>

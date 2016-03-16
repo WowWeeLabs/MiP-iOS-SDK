@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-FOUNDATION_EXPORT NSUInteger const MIP_BLUETOOTH_PRODUCT_ID;
+
 FOUNDATION_EXPORT NSString *const MIP_BLUETOOTH_CUSTOM_DATA_IDENTIFIER;
 
 typedef NS_OPTIONS(uint8_t, kMipCommand) {

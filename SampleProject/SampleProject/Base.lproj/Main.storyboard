@@ -125,9 +125,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Lfq-2z-NhM" secondAttribute="centerX" id="Ssd-Vl-zO8"/>
-                            <constraint firstItem="Lfq-2z-NhM" firstAttribute="top" secondItem="8z3-Q9-Oug" secondAttribute="bottom" constant="10" id="c2O-0n-CLL"/>
                             <constraint firstItem="KYs-Qk-var" firstAttribute="leading" secondItem="KqB-zp-i4w" secondAttribute="leadingMargin" id="f5X-zE-aWL"/>
                             <constraint firstItem="KYs-Qk-var" firstAttribute="top" secondItem="KqB-zp-i4w" secondAttribute="topMargin" constant="8" id="jz0-gC-Ha8"/>
+                            <constraint firstItem="Lfq-2z-NhM" firstAttribute="top" secondItem="8z3-Q9-Oug" secondAttribute="bottom" constant="10" id="ljl-cE-nGG"/>
                         </constraints>
                     </view>
                     <connections>

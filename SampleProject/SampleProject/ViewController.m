@@ -68,7 +68,7 @@
     NSLog(@"MiP is falling forward.... Tiiiiiimmmmmmbbeeeeer!");
     
     // Mip can fall forward or backward, in our example we are just simply making him fall forward
-    [self.mip mipFalloverWithStyle:kMipPositionFaceDown];
+    [self.mip mipFalloverWithStyle:kMipPositionOnBack]; // only kMipPositionFaceDown / kMipPositionOnBack
 }
 
 

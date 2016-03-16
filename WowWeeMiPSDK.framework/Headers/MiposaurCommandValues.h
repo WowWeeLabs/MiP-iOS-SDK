@@ -9,10 +9,10 @@
 //#import "MipCommandValues.h"
 @import Foundation;
 
-FOUNDATION_EXPORT NSUInteger const MIPOSAUR_BLUETOOTH_PRODUCT_ID;
+
 FOUNDATION_EXPORT NSString *const MIPOSAUR_BLUETOOTH_CUSTOM_DATA_IDENTIFIER;
 
-FOUNDATION_EXPORT NSUInteger const MIPOSAUR_BLUETOOTH_PRODUCT_DFU_ID;
+
 
 typedef NS_OPTIONS(uint8_t, kMiposaurCommand) {
     kMiposaurPlayAnimation = 0x76,  //different
