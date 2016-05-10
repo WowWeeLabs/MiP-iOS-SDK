@@ -68,7 +68,7 @@
     NSLog(@"MiP is falling forward.... Tiiiiiimmmmmmbbeeeeer!");
     
     // Mip can fall forward or backward, in our example we are just simply making him fall forward
-    [self.mip mipFalloverWithStyle:kMipPositionOnBack]; // only kMipPositionFaceDown / kMipPositionOnBack
+    [self.mip mipFalloverWithStyle:kMipPositionFaceDown]; // only kMipPositionFaceDown / kMipPositionOnBack
 }
 
 
@@ -112,6 +112,8 @@
 }
 
 #pragma mark - MipRobot Callbacks
+
+
 - (void) MipDeviceReady:(MipRobot *)mip {
     self.mip = mip;
     // Yay we are connected and ready to talk
@@ -121,9 +123,36 @@
     self.falloverButton.enabled = YES;
     self.driveButton.enabled = YES;
     self.weightLevel.enabled =YES;
+
+
+    
+
     
     [self.mip readMipSensorWeightLevel];
+    
+    
+    [self.mip getMipClapStatus];
+    
+
 }
+
+
+
+-(void) MipRobot:(MipRobot *)mip didReceiveNumberOfClaps:(NSUInteger)claptimes{
+    NSLog(@"(void) MipRobot:(MipRobot *)mip didReceiveNumberOfClaps:(NSUInteger)claptimes");
+}
+-(void) MipRobot:(MipRobot *)mip didReceiveClapDetectionStatusIsEnabled:(bool)isEnabled withMSTiming:(NSUInteger)milliseconds{
+    
+    NSLog(@"didReceiveClapDetectionStatusIsEnabled %d %lu",isEnabled, (unsigned long)milliseconds);
+    
+    
+    if (!isEnabled)
+    {
+        [self.mip setMipClapDelayTime:1000];
+        [self.mip setMipClapEnable:true];
+    }
+}
+
 
 - (void) MipDeviceDisconnected:(MipRobot *)mip error:(NSError *)error {
     self.mipStatusLabel.text = [NSString stringWithFormat:@"Disconnected from MiP"];

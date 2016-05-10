@@ -88,6 +88,10 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 -(void) setMipOtherMipDetectionModeOnUsingMipId:(u_int8_t)mipId powerDistanceCm:(uint8_t)powerDistanceCm;
 -(void) setMipOtherMipDetectionModeOff;
 -(void) getMipOtherMipDetectionModeStatus;
+-(void) setMipClapEnable:(Boolean )enable;
+-(void) getMipClapStatus;
+-(void) setMipClapDelayTime:(NSUInteger)milliseconds;
+
 
 #pragma mark Gameplay Commands
 /** Tells mip to falldown in a certain way
@@ -141,6 +145,7 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 -(void) setMipProductActivated;
 
 
+
 @end
 
 #pragma mark - Delegate Callbacks
@@ -180,11 +185,15 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 -(void) MipRobot:(MipRobot *)mip didDetectOtherMip:(NSUInteger)mipId; // MipID current unused
 -(void) MipRobot:(MipRobot *)mip isCurrentlyInBootloader:(bool)inBootloader;
 -(void) MipRobot:(MipRobot *)mip didReceiveIRCommand:(NSArray *)irDataArray length:(NSUInteger)length;
--(void) MipRobot:(MipRobot *)mip didReceiveClapTimes:(uint8_t)clapTimes;
 
 -(void) MipRobot:(MipRobot *)mip didReceiveNumberOfClaps:(NSUInteger)claptimes;
 -(void) MipRobot:(MipRobot *)mip didReceiveClapDetectionStatusIsEnabled:(bool)isEnabled withMSTiming:(NSUInteger)milliseconds;
+
+
 -(void) MipRobot:(MipRobot *)mip didReceiveHackerUartStatus:(kMipHackerUartConnectedStatus)status;
+
+
+
 
 @end
 

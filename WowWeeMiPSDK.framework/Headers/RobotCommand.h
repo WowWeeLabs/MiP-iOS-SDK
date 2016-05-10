@@ -28,6 +28,7 @@ typedef void(^CommandCallbackBlock)(NSError *);
 + (RobotCommand *)robotCommandWithUInt8:(uint8_t)command byte1:(uint8_t)byte1 byte2:(uint8_t)byte2 byte3:(uint8_t)byte3 byte4:(uint8_t)byte4 byte5:(uint8_t)byte5;
 + (RobotCommand *)robotCommandWithUInt8:(uint8_t)command byte1:(uint8_t)byte1 byte2:(uint8_t)byte2 byte3:(uint8_t)byte3 byte4:(uint8_t)byte4 byte5:(uint8_t)byte5 byte6:(uint8_t)byte6;
 + (RobotCommand *)robotCommandWithUInt8:(uint8_t)command byte1:(uint8_t)byte1 byte2:(uint8_t)byte2 byte3:(uint8_t)byte3 byte4:(uint8_t)byte4 byte5:(uint8_t)byte5 byte6:(uint8_t)byte6 byte7:(uint8_t)byte7;
++ (RobotCommand *)robotCommandWithUInt8:(uint8_t)command byte1:(uint8_t)byte1 byte2:(uint8_t)byte2 byte3:(uint8_t)byte3 byte4:(uint8_t)byte4 byte5:(uint8_t)byte5 byte6:(uint8_t)byte6 byte7:(uint8_t)byte7 byte8:(uint8_t)byte8;
 
 + (RobotCommand *)robotCommandWithBytes:(uint8_t)command byteCount:(unsigned int)byteCount bytes:(uint8_t)bytes, ...;
 + (RobotCommand *) robotCommandWithData:(NSData *)data;
