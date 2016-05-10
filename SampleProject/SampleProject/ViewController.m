@@ -133,6 +133,9 @@
     
     [self.mip getMipClapStatus];
     
+    
+    [self.mip getMipGestureMode];
+    
 
 }
 
@@ -176,6 +179,26 @@
     [self performSelector:@selector(resetLevel) withObject:nil afterDelay:2];
     
 }
+
+-(void) MipRobot:(MipRobot *)mip didReceiveGestureMode:(kMipGestureModeValue)value
+{
+    if (value == kMipGestureMode_Off)
+    {
+        [self.mip setMipGestureMode:kMipGestureMode_On];
+        [self.mip getMipGestureMode];
+    }else
+    {
+        
+        NSLog(@"Gesture ready");
+    }
+}
+
+-(void) MipRobot:(MipRobot *)mip didReceiveGesture:(kMipGestureValue)value{
+    
+    NSLog(@"didReceiveGesture %d",value);
+    
+}
+
 -(void)resetLevel{
 [self.weightLevel setText:[NSString stringWithFormat:@"Weight Level"]];
 }

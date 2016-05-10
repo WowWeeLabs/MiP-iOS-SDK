@@ -22,7 +22,7 @@ typedef NS_OPTIONS(uint8_t, kMipCommand) {
     kMipGetDetectionMode = 0x0F,
     
     kMipSetGestureModeOrGestureDetected = 0x0A,
-    kMipGetGestureMode = 0x0B,
+    //kMipGetGestureMode = 0x0B,
     
     kMipCheckBootmode = 0xFF,
     
