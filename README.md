@@ -6,7 +6,7 @@ WowWee MiP iOS SDK
 
 The free MiP iOS SDK lets you control your [WowWee MiP robot](www.meetmip.com) on devices running iOS 8.0 and above and Xcode 6. To use this SDK you will also need a physical MiP robot.
 
-Pre-built official SDKs are also available for [Android](https://github.com/WowWeeLabs/MiP-Android-SDK) and also [PhoneGap](https://github.com/WowWeeLabs/MiP-PhoneGap-SDK).
+Pre-built official SDKs are also available for [Android](https://github.com/WowWeeLabs/MiP-Android-SDK), [PhoneGap](https://github.com/WowWeeLabs/MiP-PhoneGap-SDK), [Windows](https://github.com/WowWeeLabs/MiP-Windows-SDK.git) and [JavaScript (Node.js)](https://github.com/WowWeeLabs/MiP-Node.js-SDK.git).
 
 For information on WowWee products visit: <http://www.wowwee.com>
 
