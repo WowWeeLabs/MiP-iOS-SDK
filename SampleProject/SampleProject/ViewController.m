@@ -136,7 +136,6 @@
     
     [self.mip getMipGestureMode];
     
-
 }
 
 
@@ -195,7 +194,7 @@
 
 -(void) MipRobot:(MipRobot *)mip didReceiveGesture:(kMipGestureValue)value{
     
-    NSLog(@"didReceiveGesture %d",value);
+    NSLog(@"didReceiveGesture %@",[MipCommandValues gestureText:value]);
     
 }
 

@@ -192,7 +192,7 @@ typedef NS_OPTIONS(uint8_t, kMipHeadLedValue) {
     kMipHeadLed_On = 0x01,
     kMipHeadLed_BlinkSlow = 0x02,
     kMipHeadLed_BlinkFast = 0x03,
-    kMipHeadLed_FadeIn = 0x04,
+    //kMipHeadLed_FadeIn = 0x04,
 };
 
 typedef NS_OPTIONS(uint8_t, kMipSetMipTrackObjectValue) {
@@ -227,9 +227,12 @@ typedef NS_OPTIONS(uint8_t, kMipDriveDirectionValue) {
 typedef NS_OPTIONS(uint8_t, kMipGestureValue) {
     kMipGesture_Left = 0x0A,
     kMipGesture_Right = 0x0B,
-    kMipGesture_SweepLeft = 0x0C,
-    kMipGesture_SweepRight = 0x0D,
-    kMipGesture_Hold = 0x0E
+    kMipGesture_forward = 0x0F,
+    kMipGesture_back = 0x10,
+    
+    //kMipGesture_SweepLeft = 0x0C,
+    //kMipGesture_SweepRight = 0x0D,
+    //kMipGesture_Hold = 0x0E
 };
 
 typedef NS_OPTIONS(uint8_t, kMipDriveContinuousValue) {
