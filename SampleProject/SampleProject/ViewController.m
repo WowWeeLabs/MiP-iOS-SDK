@@ -36,7 +36,7 @@
 }
 
 - (void)scan {
-    [[MipRobotFinder sharedInstance] scanForMips];
+    [[MipRobotFinder sharedInstance] scanForAllRobots];
 }
 
 - (void)addNotificationObservers {
@@ -51,17 +51,91 @@
 - (IBAction)playSoundPressed:(id)sender {
     NSLog(@"Playing MiP Sound");
     
-    // When playing a sound we need to first create a sound object, all available builtin sounds are avaialble as constants using kMipSoundFile
-    MipRobotSound *mipSound = [MipRobotSound mipRobotSoundWithFile:kMipSoundFile_MIP_IN_LOVE];
-    
-    [self.mip mipPlaySound:mipSound];
+    // Distinguish different robot by mipRobotType
+    if(self.mip.mipRobotType == MipType_MinionMip) {
+        // Playing sound in TurboDave by kMinionMipSoundFileValue
+        kMinionMipSoundFileValue value;
+        switch (rand()%4) {
+            case 0:
+                value = kMinionMipSoundFile_SPEECH_S_DMF_MINION_HELLO;
+                break;
+                
+            case 1:
+                value = kMinionMipSoundFile_NEW_FART_WET;
+                break;
+                
+            case 2:
+                value = kMinionMipSoundFile_SCREAMS_DMF_MINION_SCREAMS_INTO_TRASH_CAN_DM2;
+                break;
+                
+            case 3:
+                value = kMinionMipSoundFile_HAPPY_KEVIN_DIAL_116_OH_NO_ME_LE_DO_IT;
+                break;
+        }
+        [(MinionMipRobot*)self.mip minionPlaySoundWithEnum:value];
+    }
+    else {
+        // When playing a sound we need to first create a sound object, all available builtin sounds are avaialble as constants using kMipSoundFile
+        kMipSoundFileValue value;
+        switch (rand()%4) {
+            case 0:
+                value = kMipSoundFile_MIP_FIGHT;
+                break;
+                
+            case 1:
+                value = kMipSoundFile_MIP_IN_LOVE;
+                break;
+                
+            case 2:
+                value = kMipSoundFile_MIP_3;
+                break;
+                
+            case 3:
+                value = kMipSoundFile_MIP_MUSIC;
+                break;
+        }
+        MipRobotSound *mipSound = [MipRobotSound mipRobotSoundWithFile:value];
+        
+        [self.mip mipPlaySound:mipSound];
+    }
 }
 
 - (IBAction)changeChestRGBPressed:(id)sender {
     NSLog(@"Changing RGB colour");
     
     // Pass a UIColor here to define what colour you want the Chest RGB to turn
-    [self.mip setMipChestRGBLedWithColor:[UIColor whiteColor]];
+    UIColor* ledColor;
+    switch (rand()%7) {
+        case 0:
+            ledColor = [UIColor redColor];
+            break;
+            
+        case 1:
+            ledColor = [UIColor greenColor];
+            break;
+            
+        case 2:
+            ledColor = [UIColor yellowColor];
+            break;
+            
+        case 3:
+            ledColor = [UIColor orangeColor];
+            break;
+            
+        case 4:
+            ledColor = [UIColor purpleColor];
+            break;
+            
+        case 5:
+            ledColor = [UIColor whiteColor];
+            break;
+            
+        case 6:
+            ledColor = [UIColor blueColor];
+            break;
+    }
+    
+    [self.mip setMipChestRGBLedWithColor:ledColor];
 }
 
 - (IBAction)falloverPressed:(id)sender {

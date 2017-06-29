@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 WowWee Group Limited. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 #import "MiposaurRobot.h"
 
 @interface MiposaurEventManager : NSObject <MiposaurRobotDelegate>

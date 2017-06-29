@@ -7,7 +7,7 @@
  * permissions and limitations under the License.
  */
 
-@import CoreBluetooth;
+#import <CoreBluetooth/CoreBluetooth.h>
 
 #import "MiposaurRobot.h"
 #import "BluetoothRobotFinder.h"

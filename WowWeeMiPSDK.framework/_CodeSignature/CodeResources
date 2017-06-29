@@ -6,63 +6,71 @@
 	<dict>
 		<key>Headers/BluetoothRobot.h</key>
 		<data>
-		JulWcud2v7A0DnL92qL+X79p73A=
+		jFQk0+l9cnpVRPkRwhYRoulzPwE=
 		</data>
 		<key>Headers/BluetoothRobotFinder.h</key>
 		<data>
-		00p2Oo0CfnjY0d4dvHq5XTS5ps4=
+		jYZ8EC0iR53oCda6rcRxVYkKIow=
+		</data>
+		<key>Headers/MinionMipCommandValues.h</key>
+		<data>
+		DxttCKh5LmzungTP+ezp5dytIs8=
+		</data>
+		<key>Headers/MinionMipRobot.h</key>
+		<data>
+		0lgN5/HEa76OOw1vU6x4V7WolK4=
 		</data>
 		<key>Headers/MipCommandValues.h</key>
 		<data>
-		H6Q+4yKq5i6Td/xw9Gy7FNFhgtw=
+		jQOsOx9n4AKHidUGKiWB9mvoKsE=
 		</data>
 		<key>Headers/MipEventManager.h</key>
 		<data>
-		eczDCdoWVTC+RwdQ80RhzxzcAz0=
+		kHRTCtxYgA6Q1PtBIBesumVG9vA=
 		</data>
 		<key>Headers/MipRobot.h</key>
 		<data>
-		gQngSCUoKmeMm/ZBAIM9SdnuEoA=
+		xlsrkXm749fOLcGFkVlpC0Rctn8=
 		</data>
 		<key>Headers/MipRobotFinder.h</key>
 		<data>
-		rQDAKQZpCo8MVnzlggnjusbs2A0=
+		dg7sYyGg9AmOcD2MdfrmmknbuRI=
 		</data>
 		<key>Headers/MipRobotSound.h</key>
 		<data>
-		CjAO8UyLlhbfGPGIqr2tPSh/dIQ=
+		JFTCC0YxFRljquvBuT1wfpRbH7Y=
 		</data>
 		<key>Headers/MiposaurCommandValues.h</key>
 		<data>
-		yKGlvJ4nWUDAND4YKyBiPvMZIbc=
+		Z9zO6XQyaM88PCRcgOc0Rs9+HfE=
 		</data>
 		<key>Headers/MiposaurEventManager.h</key>
 		<data>
-		rzhodeXkvM26lJlIcMQWNJtB7u0=
+		nKEGGrbpDRKQmgF6Z391niYEyPs=
 		</data>
 		<key>Headers/MiposaurRobot.h</key>
 		<data>
-		uOENB//JPJTqUCoR6Alz787puFw=
+		VYpqiAKZjivx8TEH43OgwMCY4l4=
 		</data>
 		<key>Headers/MiposaurRobotFinder.h</key>
 		<data>
-		9+fd7HmcijAEDjd5GsRCA0iHGIA=
+		68e1Mv/kCy6uULkEh0dP95eGt1w=
 		</data>
 		<key>Headers/MiposaurRobotSound.h</key>
 		<data>
-		CBBibCEVsKLPSVIRBpiA0Fks0B4=
+		JfaduN8wwmdpUCp/YeQzps3k2BM=
 		</data>
 		<key>Headers/RobotCommand.h</key>
 		<data>
-		AXd8+1Wez+ThKaWo0uUQSYNCgAc=
+		922T5SU9C13gzkuL3VlGBrKRR4k=
 		</data>
 		<key>Headers/WowWeeMiPSDK.h</key>
 		<data>
-		3jnShNl5AjZPYyrSY/4kNsn8KTo=
+		h4UR8VfZqoTdhdRNwlB/O6hBMMc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tz0G0i6o9hqoEsLOJFf3ISlU/+w=
+		K6ir7m1vKauIGcp/8RMpHPNNtsg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,154 +83,176 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JulWcud2v7A0DnL92qL+X79p73A=
+			jFQk0+l9cnpVRPkRwhYRoulzPwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			7mNdR9rWCZ6qdD1l+BszkkPnWT0xctjsVz02D8Jquuk=
+			ilnWvqbps5FBBiUSEMlPgr8OiyntebD66Lbn5kOfRaY=
 			</data>
 		</dict>
 		<key>Headers/BluetoothRobotFinder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			00p2Oo0CfnjY0d4dvHq5XTS5ps4=
+			jYZ8EC0iR53oCda6rcRxVYkKIow=
 			</data>
 			<key>hash2</key>
 			<data>
-			OYQulmr+Jh1lOA0lFZAR9dJxU0aU14Jo3dpYYYNjixw=
+			tH+XOnzT6ldJnnIhNGCcw2IN8+uwMPXpDX1QqsAfuCQ=
+			</data>
+		</dict>
+		<key>Headers/MinionMipCommandValues.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DxttCKh5LmzungTP+ezp5dytIs8=
+			</data>
+			<key>hash2</key>
+			<data>
+			bzuwe2LjSjt6phtzapUCfmGyJxEkovTzbjM5j8OhzaI=
+			</data>
+		</dict>
+		<key>Headers/MinionMipRobot.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0lgN5/HEa76OOw1vU6x4V7WolK4=
+			</data>
+			<key>hash2</key>
+			<data>
+			T4uX4TXG75plwCiqzkak2hkNTF0Kc5CYkQBt1PgZbEU=
 			</data>
 		</dict>
 		<key>Headers/MipCommandValues.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H6Q+4yKq5i6Td/xw9Gy7FNFhgtw=
+			jQOsOx9n4AKHidUGKiWB9mvoKsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hNv+cG88xBOnwe9E11UOZqnrGQLLo4He6MT6It/ljGE=
+			1KxEz5y/AzCrpDnzM5oeEBsBT5IsoHU8AbE8GHpeC6s=
 			</data>
 		</dict>
 		<key>Headers/MipEventManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eczDCdoWVTC+RwdQ80RhzxzcAz0=
+			kHRTCtxYgA6Q1PtBIBesumVG9vA=
 			</data>
 			<key>hash2</key>
 			<data>
-			vFBOARTqaqpE33d/gSmd6ev4bzEDaQgadCyk5L/VtSA=
+			UloyvF+Hv5CNMQkVnkr+PdJYNSIhDM4NaSVLquLSwvk=
 			</data>
 		</dict>
 		<key>Headers/MipRobot.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gQngSCUoKmeMm/ZBAIM9SdnuEoA=
+			xlsrkXm749fOLcGFkVlpC0Rctn8=
 			</data>
 			<key>hash2</key>
 			<data>
-			9gnHMxhIEPExo68wptKxI2FmQVcMUb2bTDzHtRkWcII=
+			Q1a8B4wXa3yQRXi5NdBgYEz4otLAIWDW7TGc3Qih2k8=
 			</data>
 		</dict>
 		<key>Headers/MipRobotFinder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rQDAKQZpCo8MVnzlggnjusbs2A0=
+			dg7sYyGg9AmOcD2MdfrmmknbuRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			T3e/cV7KovSI/Y+7bBYQIgLk//57Z1lUbIaynuD/M7M=
+			nMSzMsRJUA+icRgAdIcR0uBq426HZxIsOCYFcj60NOM=
 			</data>
 		</dict>
 		<key>Headers/MipRobotSound.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CjAO8UyLlhbfGPGIqr2tPSh/dIQ=
+			JFTCC0YxFRljquvBuT1wfpRbH7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			2wOd+1C5nE3JM8c5IVu7o9xLFlve9rikE6zZDl1j/BM=
+			cUypw5fUxPJfjHCCamwAOsotlIOH5fAf2fBxHwTCCUc=
 			</data>
 		</dict>
 		<key>Headers/MiposaurCommandValues.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yKGlvJ4nWUDAND4YKyBiPvMZIbc=
+			Z9zO6XQyaM88PCRcgOc0Rs9+HfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZuvzVHk00LrRHeL+jrZWJvyNR5xvPGR0nS9JgEw2dcQ=
+			6SvD08xaYf3W7OpxfCNk2hhyGDzVf22n1/UYfcNAxpQ=
 			</data>
 		</dict>
 		<key>Headers/MiposaurEventManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rzhodeXkvM26lJlIcMQWNJtB7u0=
+			nKEGGrbpDRKQmgF6Z391niYEyPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			KYZRr6nXuJCjNpCgw06jdrdEyBnSu+RjgEV+P+bcRlM=
+			JJpoWmpjQDlOLKR9J+hVnpElAWiSGFR0IWs/7piEC5U=
 			</data>
 		</dict>
 		<key>Headers/MiposaurRobot.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uOENB//JPJTqUCoR6Alz787puFw=
+			VYpqiAKZjivx8TEH43OgwMCY4l4=
 			</data>
 			<key>hash2</key>
 			<data>
-			neFZv5eyVUXAsPwddo8acOJ80aE504bPfVj+EHldK7c=
+			06kWjI7nLhxrLS4py9KGFnKbD4BFCNrIMUfluB0L0Og=
 			</data>
 		</dict>
 		<key>Headers/MiposaurRobotFinder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9+fd7HmcijAEDjd5GsRCA0iHGIA=
+			68e1Mv/kCy6uULkEh0dP95eGt1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7nk5zgpSE8fPXPEWwA13nFZqD91npWplU0t5vRTlMKw=
+			ytEcBXPwCeD41xIRpvPdEYJH+3DX2LkKtE/R2qKxFt0=
 			</data>
 		</dict>
 		<key>Headers/MiposaurRobotSound.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CBBibCEVsKLPSVIRBpiA0Fks0B4=
+			JfaduN8wwmdpUCp/YeQzps3k2BM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ekXrG0hGR9sDRUAW4Pu9EcN6MhUOEsQZZVKrbn16zsg=
+			RJQHvAAz+GfyIZr/0qhqgpSCPeo3evxN5oUxHclAotM=
 			</data>
 		</dict>
 		<key>Headers/RobotCommand.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AXd8+1Wez+ThKaWo0uUQSYNCgAc=
+			922T5SU9C13gzkuL3VlGBrKRR4k=
 			</data>
 			<key>hash2</key>
 			<data>
-			R/yRFKeb/Jrj83rHConTVQStVrEsJZWoIPZHdVGYAzo=
+			A2SzYkLIsQfFvvBchLDLuCA0DvbuXemecd8+1QSHooo=
 			</data>
 		</dict>
 		<key>Headers/WowWeeMiPSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3jnShNl5AjZPYyrSY/4kNsn8KTo=
+			h4UR8VfZqoTdhdRNwlB/O6hBMMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			CdSmy7qpW7vuRkRszC08Og0zZOkV2t304U9qTU4N8AA=
+			RlQd2uJVdqa/Bsy1771QvNMB+FNLYo9CNB5Ej4PeTm8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -254,6 +284,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -299,6 +334,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

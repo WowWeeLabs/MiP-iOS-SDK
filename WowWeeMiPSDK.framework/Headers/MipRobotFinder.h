@@ -7,7 +7,7 @@
  * permissions and limitations under the License.
  */
 
-@import CoreBluetooth;
+#import <CoreBluetooth/CoreBluetooth.h>
 
 #import "MipRobot.h"
 #import "BluetoothRobotFinder.h"
@@ -39,15 +39,43 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) MIPLogLevel logLevel;
 
 /**
- Starts the BLE scanning
+ Starts the BLE scanning for Mip / CoderMip
  */
 -(void)scanForMips;
 
 /**
- Starts the BLE scanning for a specified number of seconds. Normally you should use this method because endlessly scanning is very battery intensive.
+ Starts the BLE scanning for Mip / CoderMip within a specified number of seconds. Normally you should use this method because endlessly scanning is very battery intensive.
  */
 -(void)scanForMipsForDuration:(NSUInteger)seconds;
+
+/**
+ Starts the BLE scanning for TurboDave (MinionMipRobot)
+ */
+-(void)scanForMinions;
+
+/**
+ Starts the BLE scanning for TurboDave within a specified number of seconds
+ */
+-(void)scanForMinionsForDuration:(NSUInteger)seconds;
+
+/**
+ Starts the BLE scanning for Mip / CoderMip / TurboDave
+ */
+-(void)scanForAllRobots;
+
+/**
+ Starts the BLE scanning for Mip / CoderMip / TurboDave within a specified number of seconds
+ */
+-(void)scanForAllRobotsForDuration:(NSUInteger)seconds;
+
+/**
+ Terminate the BLE scanning for all robots
+ */
 -(void)stopScanForMips;
+
+/**
+ Clear the found robots list
+ */
 -(void)clearFoundMipList;
 
 /**

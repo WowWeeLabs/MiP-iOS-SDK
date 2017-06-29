@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Andy. All rights reserved.
 // 
 
-@import UIKit;
-@import Foundation;
-@import CoreBluetooth;
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 #import "MipRobotSound.h"
 #import "BluetoothRobot.h"
@@ -24,6 +24,12 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
     MIPLogLevelDebug,
     MIPLogLevelErrors,
     MipLogLevelNone
+};
+
+typedef NS_ENUM(NSInteger, MipType) {
+    MipType_Mip,
+    MipType_CoderMip,
+    MipType_MinionMip
 };
 
 @interface MipRobot : BluetoothRobot
@@ -43,6 +49,7 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 @property (nonatomic, assign) bool disableReceivedCommandProcessing;
 
 @property (nonatomic, assign) MIPLogLevel logLevel;
+@property (nonatomic, assign) MipType mipRobotType;
 
 /** Delegate for receiving callbacks */
 @property (nonatomic, weak) id<MipRobotDelegate> delegate;
@@ -118,6 +125,7 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 
 #pragma mark IR Transmitting Commands
 -(void) mipTransmitIRGameDataWithGameType:(uint8_t)gameType mipId:(uint8_t)mipId gameData:(uint16_t)gameData powerDistanceCm:(uint8_t)powerDistanceCm;
+-(void) mipTransmitIRMipCommandOfBitLength:(uint8_t)bitLength byte1:(uint8_t)byte1 byte2:(uint8_t)byte2 byte3:(uint8_t)byte3 byte4:(uint8_t)byte4 distanceCm:(uint16_t)distanceCm;
 
 #pragma mark Driving Commands
 /** Drive MIP at speed and direction of given normalized vector.
@@ -143,8 +151,6 @@ typedef NS_ENUM(NSInteger, MIPLogLevel) {
 - (void)mipDriveBackwardForMilliseconds: (int)msecs withSpeed: (uint8_t)speed;
 
 -(void) setMipProductActivated;
-
-
 
 @end
 

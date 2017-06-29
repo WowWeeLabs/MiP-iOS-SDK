@@ -5,9 +5,9 @@
 //  Created by Forrest Chan on 2/1/15.
 //  Copyright (c) 2015 WowWee Group Limited. All rights reserved.
 //
-@import UIKit;
-@import Foundation;
-@import CoreBluetooth;
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 #import "MiposaurRobotSound.h"
 #import "BluetoothRobot.h"

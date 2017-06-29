@@ -7,8 +7,7 @@
 //
 
 //#import "MipCommandValues.h"
-@import Foundation;
-
+#import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT NSString *const MIPOSAUR_BLUETOOTH_CUSTOM_DATA_IDENTIFIER;
 

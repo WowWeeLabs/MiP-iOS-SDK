@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Andy. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 
 FOUNDATION_EXPORT NSString *const MIP_BLUETOOTH_CUSTOM_DATA_IDENTIFIER;
@@ -230,9 +230,23 @@ typedef NS_OPTIONS(uint8_t, kMipGestureValue) {
     kMipGesture_forward = 0x0F,
     kMipGesture_back = 0x10,
     
-    //kMipGesture_SweepLeft = 0x0C,
-    //kMipGesture_SweepRight = 0x0D,
-    //kMipGesture_Hold = 0x0E
+    kMipGesture_Hold = 0x0E,
+    kMipGesture_SweepCenterLeft = 0x0C,
+    kMipGesture_SweepCenterRight = 0x0D,
+    kMipGesture_SweepLeftRightLeftRight = 0x11,
+    kMipGesture_SweepRightLeftRightLeft = 0x12,
+    kMipGesture_SweepLeftRightLeft = 0x13,
+    kMipGesture_SweepRightLeftRight = 0x14,
+    
+    kMipGesture_PushBackward = 0x08,
+    kMipGesture_PushForward = 0x09,
+    
+    kMipGesture_PushDownHold = 0x20,
+    kMipGesture_PushDown1 = 0x21,
+    kMipGesture_PushDown2 = 0x22,
+    kMipGesture_PushDown3 = 0x23,
+    kMipGesture_PushDown4 = 0x24,
+    kMipGesture_PushDownOver4 = 0x25
 };
 
 typedef NS_OPTIONS(uint8_t, kMipDriveContinuousValue) {
