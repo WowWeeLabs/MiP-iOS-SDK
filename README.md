@@ -4,7 +4,7 @@ WowWee MiP iOS SDK
 
 ![](Images/MiP.png)
 
-The free MiP iOS SDK lets you control your [WowWee MiP robot](www.meetmip.com) on devices running iOS 8.0 and above and Xcode 6. To use this SDK you will also need a physical MiP robot.
+The free MiP iOS SDK lets you control your [WowWee MiP robot](www.meetmip.com) and [WowWee Turbo Dave robot](http://wowwee.com/mip-turbo-dave) on devices running iOS 8.0 and above and Xcode 6. To use this SDK you will also need a physical MiP robot or Turbo Dave robot.
 
 Pre-built official SDKs are also available for [Android](https://github.com/WowWeeLabs/MiP-Android-SDK), [PhoneGap](https://github.com/WowWeeLabs/MiP-PhoneGap-SDK), [Windows](https://github.com/WowWeeLabs/MiP-Windows-SDK.git) and [JavaScript (Node.js)](https://github.com/WowWeeLabs/MiP-Node.js-SDK.git).
 
@@ -17,6 +17,7 @@ Table of Contents
 - [Notes about the SDK](#notes-about-the-sdk)
 - [Using the SDK](#using-the-sdk)
 	- [Finding a MiP](#finding-mips)
+	- [Finding a Turbo Dave](#finding-turbo-dave)
 - SDK Documentation (coming soon)
 - [License](#license)
 - [Contributing](#contributing)
@@ -142,6 +143,17 @@ You can handle this notification using the following snippet from the sample pro
 	}
 
 In our sample project we automatically connect to the first MiP we find, however you can store these references and use them later, there is no need to connect initially. 
+	
+### Finding Turbo Dave
+If you are going to search for Turbo Dave, you can use the function below:
+	[[MipRobotFinder sharedInstance] scanForMinions];
+
+Same as finding MiPs, you are recommended to use this function for scanning:
+	[[MipRobotFinder sharedInstance] scanForMinionsForDuration:5];
+
+To scan for all types of robot including MiP, CoderMiP and Turbo Dave, you can simply call:
+	[[MipRobotFinder sharedInstance] scanForAllRobots];
+	[[MipRobotFinder sharedInstance] scanForAllRobotsForDuration:5];
 
 #### Special Note about using MipRobot objects
 When MiPs are no longer available (e.g. the player turns one off), they will still contain a valid MipRobot instance object. The only way to know if the MiP is available is to try to connect to it, or do another scan.

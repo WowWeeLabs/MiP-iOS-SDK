@@ -68,7 +68,7 @@
                 value = kMinionMipSoundFile_SCREAMS_DMF_MINION_SCREAMS_INTO_TRASH_CAN_DM2;
                 break;
                 
-            case 3:
+            default:
                 value = kMinionMipSoundFile_HAPPY_KEVIN_DIAL_116_OH_NO_ME_LE_DO_IT;
                 break;
         }
@@ -90,7 +90,7 @@
                 value = kMipSoundFile_MIP_3;
                 break;
                 
-            case 3:
+            default:
                 value = kMipSoundFile_MIP_MUSIC;
                 break;
         }
