@@ -146,12 +146,15 @@ In our sample project we automatically connect to the first MiP we find, however
 	
 ### Finding Turbo Dave
 If you are going to search for Turbo Dave, you can use the function below:
+
 	[[MipRobotFinder sharedInstance] scanForMinions];
 
 Same as finding MiPs, you are recommended to use this function for scanning:
+
 	[[MipRobotFinder sharedInstance] scanForMinionsForDuration:5];
 
 To scan for all types of robot including MiP, CoderMiP and Turbo Dave, you can simply call:
+
 	[[MipRobotFinder sharedInstance] scanForAllRobots];
 	[[MipRobotFinder sharedInstance] scanForAllRobotsForDuration:5];
 
